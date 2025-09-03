@@ -1,6 +1,6 @@
 {
   "name": "react-easy-loaders",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A fully customizable React loader toolkit with theming, overlays, registry, and createLoader API.",
   "license": "MIT",
   "author": "Devesh Lashkari",
