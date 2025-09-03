@@ -130,20 +130,22 @@ function App() {
 
 ## Built-in Loaders
 
-| Component      | Description             | Props                    |
-| -------------- | ----------------------- | ------------------------ |
-| `<Spinner />`  | Classic spinning loader | Basic props              |
-| `<Ring />`     | Animated ring with dash | Basic props              |
-| `<DualRing />` | Double ring animation   | Basic props              |
-| `<Dots />`     | Bouncing dots           | Basic props              |
-| `<Bars />`     | Scaling bars            | Basic props              |
-| `<Pulse />`    | Pulsing circle          | Basic props              |
-| `<Bounce />`   | Bouncing circles        | Basic props              |
-| `<Ripple />`   | Water ripple effect     | Basic props              |
-| `<Roller />`   | Rolling circles         | Basic props              |
-| `<Grid />`     | Grid of squares         | Basic props              |
-| `<Wave />`     | Wave animation          | Basic props              |
-| `<Progress />` | Progress bar            | Basic props + `progress` |
+Our library includes 12 beautiful, customizable loader components:
+
+| Component      | Description                  | Animation Type    |
+| -------------- | ---------------------------- | ----------------- |
+| `<Spinner />`  | Classic spinning circle      | Rotation          |
+| `<Ring />`     | Animated ring with dash      | Circular stroke   |
+| `<DualRing />` | Double concentric rings      | Counter rotation  |
+| `<Dots />`     | Three bouncing dots          | Vertical bounce   |
+| `<Bars />`     | Scaling rectangular bars     | Height scaling    |
+| `<Pulse />`    | Pulsing circle effect        | Scale transform   |
+| `<Bounce />`   | Two bouncing circles         | Alternating scale |
+| `<Ripple />`   | Water ripple effect          | Expanding rings   |
+| `<Roller />`   | Rolling circles in sequence  | Sequential motion |
+| `<Grid />`     | 3x3 grid of animated squares | Fade in/out       |
+| `<Wave />`     | Horizontal wave animation    | Sequential bars   |
+| `<Progress />` | Linear progress indicator    | Width transition  |
 
 ### Basic Props
 
