@@ -1,0 +1,61 @@
+{
+  "name": "react-easy-loaders",
+  "version": "1.0.1",
+  "description": "A fully customizable React loader toolkit with theming, overlays, registry, and createLoader API.",
+  "license": "MIT",
+  "author": "Devesh Lashkari",
+  "sideEffects": false,
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --dts --format cjs,esm --sourcemap --clean",
+    "dev": "npm run demo:dev",
+    "prepublishOnly": "npm run build",
+    "demo:install": "cd demo && npm install",
+    "demo:dev": "cd demo && npm run dev",
+    "demo:build": "cd demo && npm run build",
+    "demo:preview": "cd demo && npm run preview",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist demo/dist",
+    "release": "npm run build && npm publish"
+  },
+  "peerDependencies": {
+    "react": ">=17 || >=18",
+    "react-dom": ">=17 || >=18"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "react",
+    "loader",
+    "spinner",
+    "progress",
+    "overlay",
+    "lottie",
+    "registry",
+    "theming"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deveshlashkari/react-easy-loaders.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deveshlashkari/react-easy-loaders/issues"
+  },
+  "homepage": "https://github.com/deveshlashkari/react-easy-loaders#readme"
+}
