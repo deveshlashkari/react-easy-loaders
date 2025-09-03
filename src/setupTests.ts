@@ -1,7 +1,7 @@
-import '@testing-library/jest-dom';
+import "@testing-library/jest-dom";
 
 // Mock CSS animations for testing
-Object.defineProperty(window, 'matchMedia', {
+Object.defineProperty(window, "matchMedia", {
   writable: true,
   value: jest.fn().mockImplementation((query: string) => ({
     matches: false,
@@ -21,5 +21,9 @@ Object.defineProperty(window, 'matchMedia', {
 };
 
 // Mock for requestAnimationFrame
-(globalThis as any).requestAnimationFrame = jest.fn((cb: FrameRequestCallback) => setTimeout(cb, 16));
-(globalThis as any).cancelAnimationFrame = jest.fn((id: number) => clearTimeout(id));
+(globalThis as any).requestAnimationFrame = jest.fn(
+  (cb: FrameRequestCallback) => setTimeout(cb, 16)
+);
+(globalThis as any).cancelAnimationFrame = jest.fn((id: number) =>
+  clearTimeout(id)
+);
