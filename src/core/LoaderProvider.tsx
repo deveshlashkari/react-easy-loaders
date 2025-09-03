@@ -52,7 +52,6 @@ export function useLoader() {
 
 export function useLoaderTheme() {
   const c = useContext(LoaderContext);
-  if (!c)
-    throw new Error("useLoaderTheme must be used within <LoaderProvider>");
+  if (!c) return null; // Return null instead of throwing error
   return c.theme;
 }
